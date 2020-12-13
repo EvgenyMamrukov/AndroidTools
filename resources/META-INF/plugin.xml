@@ -1,0 +1,46 @@
+<idea-plugin>
+  <id>com.navitel.plugin.id</id>
+  <name>Navitel Tools</name>
+  <version>1.0.0</version>
+  <vendor email="mamevg@mail.ru" url="https://navitel.ru/ru">Navitel</vendor>
+
+  <description><![CDATA[
+      This plugin provides basic tools for Navitel environment and projects.
+    ]]></description>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action
+            id="NavitelPlugin.CreateBuilderAction"
+            class="com.navitel.plugin.actions.CreateBuilderAction"
+            text="Builder"
+            description="Generates inner Builder class according to the pattern">
+      <add-to-group group-id="GenerateGroup" anchor="first"/>
+    </action>
+    <action
+            id="NavitelPlugin.CreateNewDialogFragmentAction"
+            icon="AllIcons.Nodes.Class"
+            class="com.navitel.plugin.actions.CreateDialogFragmentAction"
+            text="Dialog Fragment Class">
+      <add-to-group group-id="NewGroup" anchor="first"/>
+    </action>
+    <action
+            id="NavitelPlugin.CreateNewFragmentAction"
+            icon="AllIcons.Nodes.Class"
+            class="com.navitel.plugin.actions.CreateFragmentAction"
+            text="Fragment Class">
+      <add-to-group group-id="NewGroup" anchor="first"/>
+    </action>
+    <action
+            id="NavitelPlugin.CreateNewActivityAction"
+            icon="AllIcons.Nodes.Class"
+            class="com.navitel.plugin.actions.CreateActivityAction"
+            text="Activity Class">
+      <add-to-group group-id="NewGroup" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
